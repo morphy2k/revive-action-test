@@ -14,6 +14,6 @@ jobs:
       uses: morphy2k/revive-action@master
       with:
         config: revive.toml
-        exclude: "errors2.go;error/..."
+        exclude: "err2.go"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
