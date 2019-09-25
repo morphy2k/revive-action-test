@@ -3,7 +3,10 @@ on:
   push:
     paths:
       - '*.go'
+      - 'revive.toml'
       - '.github/workflows/lint.yaml'
+    tags:
+      - '!refs/tags/*'
 
 jobs:
 
@@ -16,9 +19,9 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Run Revive Action
-      uses: morphy2k/revive-action@master
+      uses: morphy2k/revive-action@feature/custom-path
       with:
         config: revive.toml
-        exclude: "err2.go"
+        path: "./errors/..."
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
