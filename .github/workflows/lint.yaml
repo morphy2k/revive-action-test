@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Run Revive Action
-      uses: morphy2k/revive-action@feature/custom-path
+      uses: morphy2k/revive-action@go-github-v29
       with:
         config: revive.toml
         path: "./errors/..."
