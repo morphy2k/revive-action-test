@@ -9,10 +9,10 @@ jobs:
     steps:
 
     - name: Check out code into the Go module directory
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     - name: Run Revive Action
-      uses: morphy2k/revive-action@check-run-experiment
+      uses: morphy2k/revive-action@068c3e43232e1ba8776ceca1d0439ac4424afe27
       with:
         config: revive.toml
         path: "./errors/..."
