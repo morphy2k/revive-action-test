@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run Revive Action
-      uses: morphy2k/revive-action@068c3e43232e1ba8776ceca1d0439ac4424afe27
+      uses: morphy2k/revive-action@check-run-experiment
       with:
         config: revive.toml
         path: "./errors/..."
