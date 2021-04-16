@@ -15,6 +15,6 @@ jobs:
       uses: morphy2k/revive-action@feature/workflow-cmd
       with:
         config: revive.toml
-        path: "./errors/..."
+        path: "./error/..."
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
