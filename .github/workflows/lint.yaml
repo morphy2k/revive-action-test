@@ -19,4 +19,6 @@ jobs:
       with:
         config: revive.toml
         path: "./error/..."
-        exclude: "error2.go;error3.go"
+        exclude: |
+          error/error2.go
+          error/error3.go
