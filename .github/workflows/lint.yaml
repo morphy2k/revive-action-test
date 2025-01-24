@@ -15,10 +15,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Run Revive Action
-      uses: morphy2k/revive-action@2a9a601c4c69cb0a0304b61b85a640e3cbdc99a9
+      uses: morphy2k/revive-action@master
       with:
         config: revive.toml
-        path: "./error/..."
-        exclude: |
-          error/error2.go
-          error/error3.go
+        # path: "./error/..."
