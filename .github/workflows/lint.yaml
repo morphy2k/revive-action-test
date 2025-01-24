@@ -20,3 +20,4 @@ jobs:
         config: revive.toml
         # path: "./error/..."
         fail-on-any: true
+        test-var: "foo"
