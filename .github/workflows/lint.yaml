@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Run Revive Action
-      uses: morphy2k/revive-action@b96e7d23ab84a40f7d8f2cc76e8a65049a142e45
+      uses: docker://ghcr.io/morphy2k/revive-action:v2
       with:
         config: revive.toml
         # path: "./error/..."
